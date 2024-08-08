@@ -1,0 +1,354 @@
+/* Reset and Font Setup */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    background-color: #404040;
+    color: white;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* Add scroll bar when content overflows */
+html, body {
+    height: 100vh;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    height: 100%;
+}
+
+aside {
+    width: 12%;
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+.Links li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.Links li i {
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: #80ed99;
+}
+
+.Links li p {
+    font-size: 1em;
+}
+
+.Links li:hover {
+    background: #80ed99;
+    color: black;
+}
+
+.Links li.activeLink {
+    background: #80ed99;
+    color: black;
+}
+
+.swiper {
+    width: 88%;
+}
+
+.SlideContainer {
+    display: flex;
+    height: 100%;
+}
+
+/* Home Slide */
+.home-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    position: relative;
+}
+
+.HomeContent h1, .HomeContent h2 {
+    font-size: 3em;
+    line-height: 1.2;
+}
+
+.HomeContent .stylized-name {
+    color: #80ed99;
+}
+
+.HomeContent .proffesions {
+    color: #80ed99;
+}
+
+.HomeContent .heroline {
+    margin-top: 20px;
+    font-size: 1.2em;
+    max-width: 500px;
+    line-height: 1.5;
+}
+
+.HomeContent .buttonGroup {
+    margin-top: 20px;
+}
+
+.HomeContent button {
+    padding: 10px 20px;
+    background: #80ed99;
+    color: black;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.HomeContent button:hover {
+    background: #010101;
+    color: white;
+}
+
+.SideImg {
+    position: relative;
+    max-width: 400px;
+}
+
+.SideImg img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.top-right-corner, .bottom-left-corner {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-right-corner {
+    top: 0;
+    right: 0;
+}
+
+.bottom-left-corner {
+    bottom: 0;
+    left: 0;
+}
+
+.top-right-corner hr, .bottom-left-corner hr {
+    width: 50px;
+    border: 2px solid #80ed99;
+    margin: 5px 0;
+}
+
+.slide-help {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* About Slide */
+.about-us {
+    padding: 50px;
+}
+
+.about-us .heading {
+    font-size: 3em;
+    color: #80ed99;
+}
+
+.about-us .sub-heading {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #80ed99;
+}
+
+.aboutme-deatils {
+    margin-top: 20px;
+    line-height: 1.5;
+    font-size: 1.1em;
+}
+
+.about-me-divison {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.about-me-table {
+    list-style: none;
+    font-size: 1.1em;
+}
+
+.about-me-table li {
+    margin: 10px 0;
+}
+
+.skill-bar {
+    width: 50%;
+}
+
+.skill-bar li {
+    margin-bottom: 20px;
+}
+
+.bar {
+    background: #353535;
+    border-radius: 5px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.active-bar {
+    height: 100%;
+    background: #80ed99;
+    border-radius: 5px;
+}
+
+/* Services Slide */
+.services {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.services .heading {
+    font-size: 3em;
+    color: #80ed99;
+}
+
+.service {
+    background: #121212;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.service-icon {
+    font-size: 2em;
+    color: #80ed99;
+    margin-bottom: 10px;
+}
+
+.service h2 {
+    margin-bottom: 10px;
+}
+
+/* Gallery Slide */
+.gallery {
+    padding: 50px;
+}
+
+.gallery .heading {
+    font-size: 3em;
+    color: #80ed99;
+    margin-bottom: 20px;
+}
+
+.project {
+    width: 100%;
+    height: 200px;
+    background: #121212;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contact Slide */
+.contact {
+    padding: 50px;
+}
+
+.contact .heading {
+    font-size: 3em;
+    color: #80ed99;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form {
+    width: 45%;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #80ed99;
+    background: #121212;
+    color: white;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background: #80ed99;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background: #010101;
+    color: white;
+}
+
+.contact-side-details {
+    width: 45%;
+}
+
+.my-name {
+    font-size: 2em;
+    color: #80ed99;
+}
+
+.details {
+    margin-left: 10px;
+}
+
+.social-links i {
+    font-size: 2em;
+    color: #80ed99;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-links i:hover {
+    color: white;
+}
